@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="customer_address_edit" template="Kunj_ZipcodeValidation::address/edit.phtml">
+            <arguments>
+                <argument name="attribute_data" xsi:type="object">Magento\Customer\Block\DataProviders\AddressAttributeData</argument>
+                <argument name="post_code_config" xsi:type="object">Kunj\ZipcodeValidation\Block\DataProviders\PostCodesPatternsAttributeData</argument>
+                <argument name="city_code_config" xsi:type="object">Kunj\ZipcodeValidation\Block\DataProviders\CityCodesPatternsAttributeData</argument>
+            </arguments>
+        </referenceBlock>
+    </body>
+</page>
